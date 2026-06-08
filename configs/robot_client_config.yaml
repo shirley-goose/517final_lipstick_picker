@@ -1,0 +1,43 @@
+robot:
+  type: bi_so_follower
+  id: bi_follower
+
+  left_arm_config:
+    port: /dev/ttyACM3
+    cameras:
+      wrist:
+        type: opencv
+        index_or_path: /dev/video1
+        width: 640
+        height: 480
+        fps: 30
+        fourcc: MJPG
+        backend: V4L2
+
+  right_arm_config:
+    port: /dev/ttyACM1
+    cameras:
+      wrist:
+        type: opencv
+        index_or_path: /dev/video10
+        width: 640
+        height: 480
+        fps: 30
+        fourcc: MJPG
+        backend: V4L2
+
+  cameras:
+    realsense:
+      type: intelrealsense
+      serial_number_or_name: "348522076012"
+      width: 640
+      height: 480
+      fps: 30
+      use_depth: false
+      warmup_s: 8
+
+policy_type: act
+actions_per_chunk: 100
+pretrained_name_or_path: /home/ubuntu/techin517/outputs/train/lipstick_act_yolo_highlight_final/checkpoints/100000/pretrained_model
+server_address: localhost:8081
+task: "lipstick picking"

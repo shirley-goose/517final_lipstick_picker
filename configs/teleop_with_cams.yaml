@@ -1,0 +1,49 @@
+robot:
+  type: bi_so_follower
+  id: bi_follower
+
+  left_arm_config:
+    port: /dev/ttyACM3
+    cameras:
+      wrist:
+        type: opencv
+        index_or_path: /dev/video1
+        backend: V4L2
+        width: 640
+        height: 480
+        fps: 30
+        fourcc: MJPG
+
+  right_arm_config:
+    port: /dev/ttyACM1
+    cameras:
+      wrist:
+        type: opencv
+        index_or_path: /dev/video10
+        backend: V4L2
+        width: 640
+        height: 480
+        fps: 30
+        fourcc: MJPG
+
+  cameras:
+    realsense:
+      type: intelrealsense
+      serial_number_or_name: "348522076012"
+      width: 640
+      height: 480
+      fps: 30
+    
+      use_depth: false
+      warmup_s: 8
+
+teleop:
+  type: bi_so_leader
+  id: bi_leader
+
+  left_arm_config:
+    port: /dev/ttyACM2
+
+  right_arm_config:
+    port: /dev/ttyACM0
+
