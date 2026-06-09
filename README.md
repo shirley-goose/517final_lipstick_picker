@@ -4,7 +4,7 @@ A bi-manual robotic system that autonomously picks up a lipstick from a cluttere
 
 **Video Demo:** [VIDEO_LINK_HERE]
 
-**Team:** Shirley He, Yuhang, Elina Zhao
+**Team:** Shirley He, Yuhang Sun, Elina Zhao
 
 ---
 
@@ -43,7 +43,7 @@ We evaluated over **30 trials** across three lighting conditions with the lipsti
 - The robot performs consistently under normal and bright lighting (60% each).
 - Performance drops significantly under dim lighting (30%), suggesting the policy relies on visual contrast that degrades in low light.
 - The most common failure mode is **missed grasp** — the gripper approaches the correct area but closes at a slightly wrong angle or offset.
-- Raw trial data is in [`lerobot/evaluation/results/lipstick_eval.csv`](lerobot/evaluation/results/lipstick_eval.csv).
+- Raw trial data is in [`evaluation/results/lipstick_eval.csv`](evaluation/results/lipstick_eval.csv).
 
 ---
 
@@ -59,8 +59,8 @@ We evaluated over **30 trials** across three lighting conditions with the lipsti
 ### 1. Clone the repo
 
 ```bash
-git clone --recursive https://github.com/GIXLabs/TECHIN517.git
-cd TECHIN517
+git clone --recursive https://github.com/shirley-goose/517final_lipstick_picker.git
+cd 517final_lipstick_picker
 ```
 
 ### 2. Open in Dev Container
@@ -190,6 +190,17 @@ python evaluation/log_lipstick_eval.py \
 ```
 
 ---
+
+## Team Contributions
+
+This project was completed collaboratively by all team members. Shirley He, Yuhang Sun, and Elina Zhao all participated in data collection, robot operation, debugging, evaluation trials, and final documentation. The remaining work was divided evenly across the team, with each member contributing to both the technical implementation and the final presentation.
+
+* **Shirley He** contributed to robot setup, data collection, imitation learning pipeline organization, model training/testing, and visualization/report writing.
+* **Yuhang Sun** contributed to data collection, YOLO-based visual attention pipeline, evaluation design, quantitative result analysis, and README documentation.
+* **Elina Zhao** contributed to robot calibration, teleoperation/data recording, evaluation trials, failure mode analysis, and final demo preparation.
+
+Overall, all team members contributed substantially to the project, including collecting demonstrations, testing the robot, analyzing results, and preparing the final deliverables.
+
 
 ## Acknowledgements
 
