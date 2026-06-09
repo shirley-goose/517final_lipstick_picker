@@ -96,6 +96,7 @@ mv lipstick_yolo/models/black_lipstick_yolo/weights/black_lipstick_yolo_weights.
 
 Connect the robot arms to USB:
 Use `lerobot-find-port` & `lerobot-find-cameras opencv` to find the correct port. It changes every time.
+
 **Example:**
 - Left arm: `/dev/ttyACM3`
 - Right arm: `/dev/ttyACM1`
