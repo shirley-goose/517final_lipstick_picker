@@ -2,7 +2,7 @@
 
 A bi-manual robotic system that autonomously picks up a lipstick from a cluttered surface and delivers it to a target location. Built with the SO-101 dual-arm robot using imitation learning (ACT policy) and YOLO-based visual attention.
 
-**Video Demo:** [CHECK OUR VIDEO HERE](https://drive.google.com/file/d/1jqrwiZV79ZaZk5NA5QT51EYHxjzGBJ9z/view?usp=sharing)
+**Video Demo:** [CHECK OUR VIDEO HERE](https://youtube.com/shorts/cm_CcP5KEg0?feature=share)
 
 **Team:** Shirley He, Yuhang Sun, Elina Zhao
 
