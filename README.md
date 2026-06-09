@@ -4,7 +4,7 @@ A bi-manual robotic system that autonomously picks up a lipstick from a cluttere
 
 **Video Demo:** [VIDEO_LINK_HERE]
 
-**Team:** [Team Member 1], [Team Member 2], [Team Member 3]
+**Team:** Shirley He, Yuhang, Elina Zhao
 
 ---
 
@@ -95,6 +95,8 @@ mv lipstick_yolo/models/black_lipstick_yolo/weights/black_lipstick_yolo_weights.
 ### Hardware setup
 
 Connect the robot arms to USB:
+Use `lerobot-find-port` & `lerobot-find-cameras opencv` to find the correct port. It changes every time.
+**Example:**
 - Left arm: `/dev/ttyACM3`
 - Right arm: `/dev/ttyACM1`
 - Wrist cameras: `/dev/video1` (left), `/dev/video10` (right)
